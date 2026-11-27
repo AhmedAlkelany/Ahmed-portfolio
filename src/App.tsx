@@ -709,7 +709,7 @@ export default function App() {
                         {content.contact.linkedinLabel}
                       </dt>
                       <dd className="mt-1 truncate text-sm font-medium text-slate-900 dark:text-slate-100">
-                        linkedin.com/in/ahmed-alkelany-5b6669244
+                        linkedin.com/in/ahmed-alkelany
                       </dd>
                     </div>
                     <a

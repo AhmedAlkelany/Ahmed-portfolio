@@ -160,11 +160,11 @@ export interface PortfolioContent {
 export const PROFILE_META = {
   fullName: 'Ahmed Khalfallah Hussein',
   alias: 'Ahmed Alkelany',
-  email: 'Ahmdalkylany669@gmail.com',
+  email: 'ahmdalkylany669@gmail.com',
   phone: '+201092626499',
   phoneHref: 'tel:+201092626499',
-  linkedinUrl: 'https://www.linkedin.com/in/ahmed-alkelany-5b6669244',
-  cvUrl: '/assets/aistudio/Ahmed_Khalfallah_Hussein_CV_8ab32758.pdf',
+  linkedinUrl: 'https://linkedin.com/in/ahmed-alkelany',
+  cvUrl: '/assets/aistudio/Ahmed_Khalfallah_Hussein_CV_bd4b7bb6.pdf',
   cvFileName: 'Ahmed_Khalfallah_Hussein_CV.pdf',
 };
 
@@ -183,18 +183,18 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
       menuLabel: 'Toggle navigation menu',
     },
     hero: {
-      kicker: 'Cybersecurity Specialist · SOC Analyst · Cairo, Egypt',
-      headline: 'Defending networks through threat hunting and digital forensics.',
+      kicker: 'Tier 1 SOC Analyst · Cybersecurity Specialist · Cairo, Egypt',
+      headline: 'Defending networks through alert analysis, threat hunting, and digital forensics.',
       summary:
-        'Dedicated Cybersecurity Specialist and SOC Analyst with hands-on experience in threat detection, incident response, and forensic investigation. Certified across eJPTv2, CHFI, CND, CSA, and Splunk to turn raw telemetry into resilient network defense.',
+        'Tier 1 SOC Analyst and Cybersecurity Specialist with hands-on experience in threat detection, incident response, and digital forensics. Trained in CND, eJPTv2, and CHFI, with strong proficiency in Splunk SIEM, Security Onion, Kali Linux, and Python/C++ scripting to analyze security alerts and strengthen network defense postures.',
       primaryCta: 'Get in Touch',
       secondaryCta: 'Preview CV',
       linkedinCta: 'LinkedIn Profile',
       facts: [
         {
-          value: '06',
-          label: 'Industry Certifications',
-          detail: 'eJPTv2 · CHFI · CND · CSA · Splunk · ML & AI',
+          value: '05',
+          label: 'Certifications & Training',
+          detail: 'eJPTv2 · CHFI · CND · Splunk · ML & AI',
         },
         {
           value: 'B.Sc. 2026',
@@ -202,31 +202,31 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
           detail: 'New Cairo Academy · Cairo, Egypt',
         },
         {
-          value: 'SIEM & IR',
+          value: 'Tier 1 SOC',
           label: 'Operational Stack',
           detail: 'Splunk · Security Onion · Kali Linux',
         },
         {
           value: 'EN / AR',
           label: 'Bilingual Operations',
-          detail: 'Native Arabic · Professional English',
+          detail: 'Native Arabic · Fluent English',
         },
       ],
       lifecycleHeading: 'Security Operations Workflow',
-      lifecycleSubheading: 'Select a phase to inspect tools, methodology, and credentials.',
+      lifecycleSubheading: 'Select a phase to inspect tools, methodology, and training.',
       lifecycleToolsLabel: 'Primary Tooling',
-      lifecycleCredentialLabel: 'Aligned Credential',
+      lifecycleCredentialLabel: 'Aligned Training',
       lifecycleDeliverableLabel: 'Operational Output',
       stages: [
         {
           id: 'detect',
           index: '01',
           label: 'Detect',
-          title: 'Continuous SIEM Monitoring & Threat Hunting',
+          title: 'Tier 1 Alert Triage, SIEM Monitoring & Threat Hunting',
           summary:
-            'Correlate endpoint, authentication, and network telemetry to surface anomalous behavior early before lateral movement escalates.',
+            'Correlate endpoint, authentication, and network telemetry to analyze security alerts and surface anomalous behavior early before lateral movement escalates.',
           tools: ['Splunk (SIEM)', 'Security Onion', 'Python'],
-          credentialRef: 'CSA · Splunk Training',
+          credentialRef: 'Splunk Training / Certification',
           deliverable: 'Triaged alerts & correlation queries',
         },
         {
@@ -349,16 +349,16 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
       languagesLabel: 'Languages',
       languages: [
         { name: 'Arabic', level: 'Native' },
-        { name: 'English', level: 'Professional Working Proficiency' },
+        { name: 'English', level: 'Fluent' },
       ],
     },
     certifications: {
-      sectionTitle: '02. Certifications & Credentials',
+      sectionTitle: '02. Certifications & Training',
       sectionLead:
-        'Six industry-recognized credentials spanning penetration testing, forensic investigation, network defense, SOC operations, SIEM tooling, and AI.',
+        'Five specialized certifications and training tracks spanning penetration testing, forensic investigation, network defense, SIEM tooling, and applied AI.',
       filters: [
-        { id: 'all', label: 'All (6)' },
-        { id: 'soc', label: 'SOC & Network' },
+        { id: 'all', label: 'All (5)' },
+        { id: 'soc', label: 'SIEM & Network' },
         { id: 'forensics', label: 'Forensics' },
         { id: 'offensive', label: 'Penetration Testing' },
         { id: 'ai', label: 'AI & Data' },
@@ -397,39 +397,27 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
           code: 'CND',
           name: 'Certified Network Defender',
           domain: 'soc',
-          domainLabel: 'SOC & Network',
+          domainLabel: 'SIEM & Network',
           focus: 'Network perimeter protection, traffic monitoring, hardening, and defensive architecture.',
           overview:
             'Focuses on protecting, detecting, and responding to threats on modern network infrastructures—establishing strong baseline controls, traffic visibility, and resilient defensive postures.',
           appliedSkills: ['Network Security Controls', 'Traffic Analysis', 'Defensive Hardening', 'Threat Mitigation'],
         },
         {
-          id: 'csa',
-          index: '04',
-          code: 'CSA',
-          name: 'Certified SOC Analyst',
-          domain: 'soc',
-          domainLabel: 'SOC & Network',
-          focus: 'Tier 1 & Tier 2 Security Operations Center workflows, log triage, and incident escalation.',
-          overview:
-            'Validates core Security Operations Center discipline: ingesting security telemetry, correlating alerts, distinguishing false positives from genuine threats, and coordinating timely incident response.',
-          appliedSkills: ['SOC Workflow Management', 'Alert Triage', 'Incident Escalation', 'Continuous Monitoring'],
-        },
-        {
           id: 'splunk',
-          index: '05',
+          index: '04',
           code: 'SPLUNK',
-          name: 'Splunk Training & Certification',
+          name: 'Splunk Training / Certification',
           domain: 'soc',
-          domainLabel: 'SOC & Network',
-          focus: 'SIEM search processing, log correlation, anomaly detection, and operational visibility.',
+          domainLabel: 'SIEM & Network',
+          focus: 'SIEM search processing, alert analysis, log correlation, and operational visibility.',
           overview:
-            'Demonstrates hands-on proficiency in querying machine data, building focused detection searches, investigating security events, and supporting continuous monitoring inside Splunk SIEM environments.',
-          appliedSkills: ['SIEM Querying', 'Log Correlation', 'Security Dashboards', 'Threat Detection'],
+            'Demonstrates hands-on proficiency in querying machine data, building focused detection searches, investigating security alerts, and supporting continuous monitoring inside Splunk SIEM environments.',
+          appliedSkills: ['SIEM Querying', 'Log Correlation', 'Security Dashboards', 'Alert Triage & Detection'],
         },
         {
           id: 'ml-ai',
-          index: '06',
+          index: '05',
           code: 'ML & AI',
           name: 'Certified Machine Learning & AI',
           domain: 'ai',
@@ -491,7 +479,7 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
         degree: 'Bachelor of Computer Science',
         institution: 'Higher Institute for Computer Science and Information Systems (New Cairo Academy)',
         location: 'New Cairo, Egypt',
-        graduation: 'Expected Graduation: July 2026',
+        graduation: 'Graduated: July 2026',
         focusNote:
           'Foundations in computer science, systems analysis, programming in C++ and Python, networking, and applied machine learning.',
       },
@@ -499,7 +487,7 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
     contact: {
       sectionTitle: '04. Contact & Engagement',
       sectionLead:
-        'Available for SOC Analyst roles, freelance security assessments, digital forensics investigations, and collaborative cybersecurity projects.',
+        'Available for Tier 1 SOC Analyst roles, freelance security assessments, digital forensics investigations, and collaborative cybersecurity projects.',
       directChannelsLabel: 'Direct Channels',
       emailLabel: 'Email',
       phoneLabel: 'Phone',
@@ -516,7 +504,7 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
       emailPlaceholder: 'name@company.com',
       topicLabel: 'Engagement Type',
       topics: [
-        'SOC Analyst / Full-Time Role',
+        'Tier 1 SOC Analyst / Full-Time Role',
         'Freelance Security Assessment',
         'Incident Response & Forensics',
         'General Collaboration',
@@ -558,18 +546,18 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
       menuLabel: 'فتح قائمة التنقل',
     },
     hero: {
-      kicker: 'أخصائي أمن سيبراني · محلل SOC · القاهرة، مصر',
-      headline: 'حماية الشبكات عبر رصد التهديدات والتحقيق الجنائي الرقمي.',
+      kicker: 'محلل SOC مستوى أول (Tier 1) · أخصائي أمن سيبراني · القاهرة، مصر',
+      headline: 'حماية الشبكات عبر تحليل التنبيهات ورصد التهديدات والتحقيق الجنائي الرقمي.',
       summary:
-        'أخصائي أمن سيبراني ومحلل عمليات أمنية (SOC Analyst) بخبرة عملية في اكتشاف التهديدات، الاستجابة للحوادث، والتحقيق الجنائي الرقمي. حاصل على شهادات دولية تشمل eJPTv2 و CHFI و CND و CSA و Splunk لتعزيز الدفاعات السيبرانية بدقة وموثوقية.',
+        'محلل عمليات أمنية مستوى أول (Tier 1 SOC Analyst) وأخصائي أمن سيبراني بخبرة عملية في اكتشاف التهديدات، الاستجابة للحوادث، والتحقيق الجنائي الرقمي. متدرب في CND و eJPTv2 و CHFI، وبإجادة قوية لأدوات SIEM مثل Splunk وتوزيعات Security Onion و Kali Linux والبرمجة بـ Python و C++.',
       primaryCta: 'تواصل معي',
       secondaryCta: 'معاينة السيرة الذاتية',
       linkedinCta: 'حساب لينكدإن',
       facts: [
         {
-          value: '06',
-          label: 'شهادات احترافية',
-          detail: 'eJPTv2 · CHFI · CND · CSA · Splunk · ML & AI',
+          value: '05',
+          label: 'شهادات وبرامج تدريبية',
+          detail: 'eJPTv2 · CHFI · CND · Splunk · ML & AI',
         },
         {
           value: '2026',
@@ -577,31 +565,31 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
           detail: 'أكاديمية القاهرة الجديدة · مصر',
         },
         {
-          value: 'SIEM & IR',
+          value: 'Tier 1 SOC',
           label: 'أدوات التشغيل الأمني',
           detail: 'Splunk · Security Onion · Kali Linux',
         },
         {
           value: 'AR / EN',
           label: 'اللغات',
-          detail: 'العربية (لغة أم) · الإنجليزية (احترافي)',
+          detail: 'العربية (لغة أم) · الإنجليزية (بطلاقة)',
         },
       ],
       lifecycleHeading: 'منهجية العمل في العمليات الأمنية',
-      lifecycleSubheading: 'اختر مرحلة لاستعراض الأدوات والمنهجية والشهادات المرتبطة بها.',
+      lifecycleSubheading: 'اختر مرحلة لاستعراض الأدوات والمنهجية والتدريب المرتبط بها.',
       lifecycleToolsLabel: 'الأدوات الأساسية',
-      lifecycleCredentialLabel: 'الشهادة المرتبطة',
+      lifecycleCredentialLabel: 'التدريب / الشهادة المرتبطة',
       lifecycleDeliverableLabel: 'المخرج العملي',
       stages: [
         {
           id: 'detect',
           index: '01',
           label: 'الرصد',
-          title: 'المراقبة المستمرة عبر SIEM وصيد التهديدات',
+          title: 'فرز تنبيهات Tier 1 والمراقبة عبر SIEM وصيد التهديدات',
           summary:
-            'ربط سجلات الشبكة والأجهزة والمصادقة لاكتشاف السلوكيات المشبوهة مبكراً قبل تصاعد الحادث الأمني.',
+            'تحليل التنبيهات الأمنية وربط سجلات الشبكة والأجهزة لاكتشاف السلوكيات المشبوهة مبكراً قبل تصاعد الحادث الأمني.',
           tools: ['Splunk (SIEM)', 'Security Onion', 'Python'],
-          credentialRef: 'CSA · تدريب Splunk',
+          credentialRef: 'تدريب / شهادة Splunk',
           deliverable: 'فرز التنبيهات واستعلامات الكشف',
         },
         {
@@ -724,16 +712,16 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
       languagesLabel: 'اللغات',
       languages: [
         { name: 'العربية', level: 'اللغة الأم' },
-        { name: 'الإنجليزية', level: 'إجادة مهنية كاملة' },
+        { name: 'الإنجليزية', level: 'إجادة بطلاقة (Fluent)' },
       ],
     },
     certifications: {
-      sectionTitle: '02. الشهادات والاعتمادات المهنية',
+      sectionTitle: '02. الشهادات والتدريب المهني',
       sectionLead:
-        'ست شهادات معتمدة تغطي اختبار الاختراق، التحقيق الجنائي الرقمي، الدفاع الشبكي، تحليل عمليات SOC، أداة Splunk، وتعلم الآلة.',
+        'خمسة مسارات وشهادات متخصصة تغطي اختبار الاختراق، التحقيق الجنائي الرقمي، الدفاع الشبكي، أداة Splunk، وتعلم الآلة والذكاء الاصطناعي.',
       filters: [
-        { id: 'all', label: 'الكل (6)' },
-        { id: 'soc', label: 'SOC والشبكات' },
+        { id: 'all', label: 'الكل (5)' },
+        { id: 'soc', label: 'SIEM والشبكات' },
         { id: 'forensics', label: 'التحقيق الجنائي' },
         { id: 'offensive', label: 'اختبار الاختراق' },
         { id: 'ai', label: 'الذكاء الاصطناعي' },
@@ -772,39 +760,27 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
           code: 'CND',
           name: 'Certified Network Defender',
           domain: 'soc',
-          domainLabel: 'SOC والشبكات',
+          domainLabel: 'SIEM والشبكات',
           focus: 'حماية الشبكات، مراقبة حركة البيانات، وتحصين البنية التحتية الدفاعية.',
           overview:
             'تركز على حماية الشبكات واكتشاف الهجمات والاستجابة لها عبر تطبيق ضوابط أمنية محكمة ورؤية واضحة لحركة البيانات.',
           appliedSkills: ['ضوابط أمن الشبكات', 'تحليل حركة البيانات', 'التحصين الدفاعي', 'تخفيف المخاطر'],
         },
         {
-          id: 'csa',
-          index: '04',
-          code: 'CSA',
-          name: 'Certified SOC Analyst',
-          domain: 'soc',
-          domainLabel: 'SOC والشبكات',
-          focus: 'عمليات مراكز الأمن السيبراني (SOC)، فرز التنبيهات، وتصعيد الحوادث.',
-          overview:
-            'تُعنى بإدارة تدفق العمل داخل مركز العمليات الأمنية، تحليل التنبيهات، التمييز بين الإنذارات الكاذبة والتهديدات الفعلية، والتنسيق السريع للاستجابة.',
-          appliedSkills: ['إدارة تدفق عمل SOC', 'فرز التنبيهات', 'تصعيد الحوادث', 'المراقبة المستمرة'],
-        },
-        {
           id: 'splunk',
-          index: '05',
+          index: '04',
           code: 'SPLUNK',
-          name: 'Splunk Training & Certification',
+          name: 'Splunk Training / Certification',
           domain: 'soc',
-          domainLabel: 'SOC والشبكات',
-          focus: 'إدارة SIEM والبحث في السجلات وربط الأحداث الأمنية واكتشاف الشذوذ.',
+          domainLabel: 'SIEM والشبكات',
+          focus: 'إدارة SIEM وتحليل التنبيهات والبحث في السجلات وربط الأحداث الأمنية.',
           overview:
-            'تُبرز الكفاءة العملية في استعلام وتحليل السجلات الضخمة، وبناء قواعد الكشف ولوحات المراقبة داخل بيئات Splunk SIEM.',
-          appliedSkills: ['استعلامات SIEM', 'ربط السجلات', 'لوحات المتابعة الأمنية', 'رصد التهديدات'],
+            'تُبرز الكفاءة العملية في استعلام وتحليل السجلات الضخمة، وفحص التنبيهات وبناء قواعد الكشف ولوحات المراقبة داخل بيئات Splunk SIEM.',
+          appliedSkills: ['استعلامات SIEM', 'ربط السجلات', 'لوحات المتابعة الأمنية', 'فرز التنبيهات ورصد التهديدات'],
         },
         {
           id: 'ml-ai',
-          index: '06',
+          index: '05',
           code: 'ML & AI',
           name: 'Certified Machine Learning & AI',
           domain: 'ai',
@@ -866,7 +842,7 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
         degree: 'بكالوريوس علوم الحاسب',
         institution: 'المعهد العالي لعلوم الحاسب ونظم المعلومات (أكاديمية القاهرة الجديدة)',
         location: 'القاهرة الجديدة، مصر',
-        graduation: 'التخرج المتوقع: يوليو 2026',
+        graduation: 'التخرج: يوليو 2026',
         focusNote:
           'أساس أكاديمي في علوم الحاسب، تحليل الأنظمة، البرمجة بلغتي C++ و Python، الشبكات، وتعلم الآلة.',
       },
@@ -874,7 +850,7 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
     contact: {
       sectionTitle: '04. التواصل وفرص العمل',
       sectionLead:
-        'متاح لفرص العمل كمحلل عمليات أمنية (SOC Analyst)، وتقييمات الأمن السيبراني المستقلة، ومشاريع الاستجابة للحوادث.',
+        'متاح لفرص العمل كمحلل عمليات أمنية مستوى أول (Tier 1 SOC Analyst)، وتقييمات الأمن السيبراني المستقلة، ومشاريع الاستجابة للحوادث.',
       directChannelsLabel: 'قنوات التواصل المباشر',
       emailLabel: 'البريد الإلكتروني',
       phoneLabel: 'الهاتف',
@@ -891,7 +867,7 @@ export const PORTFOLIO_CONTENT: Record<Locale, PortfolioContent> = {
       emailPlaceholder: 'name@company.com',
       topicLabel: 'نوع الطلب',
       topics: [
-        'فرصة عمل SOC Analyst / دوام كامل',
+        'فرصة عمل Tier 1 SOC Analyst / دوام كامل',
         'تقييم أمني مستقل (Freelance)',
         'الاستجابة للحوادث والتحقيق الجنائي',
         'تعاون أو استفسار عام',
